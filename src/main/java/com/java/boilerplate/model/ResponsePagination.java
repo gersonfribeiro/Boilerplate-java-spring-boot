@@ -2,7 +2,7 @@ package com.java.boilerplate.model;
 
 import lombok.Data;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class ResponsePagination<T> {
@@ -10,5 +10,5 @@ public class ResponsePagination<T> {
     private Integer offset;
     private Integer total;
     private Boolean hasMore;
-    private ArrayList<T> itens;
+    private List<T> itens;
 }

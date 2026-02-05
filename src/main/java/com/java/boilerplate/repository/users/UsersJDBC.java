@@ -6,34 +6,35 @@ import com.java.boilerplate.model.User;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UsersJDBC implements IUsersJDBC {
+public class UsersJDBC implements IUsersRepository {
+
     @Override
-    public User findById(int id) {
+    public User findByUsernameOrEmail(String usernameOrEmail, String authorization) {
         return null;
     }
 
     @Override
-    public ResponsePagination<User> findAll(RequestPagination pagination) {
+    public User findById(int id, String authorization) {
         return null;
     }
 
     @Override
-    public Boolean create(User data) {
+    public ResponsePagination<User> findAll(RequestPagination pagination, String authorization) {
         return null;
     }
 
     @Override
-    public Boolean update(User data, int id) {
+    public User create(User data, String authorization) {
         return null;
     }
 
     @Override
-    public Boolean delete(int id) {
+    public User update(User data, int id, String authorization) {
         return null;
     }
 
     @Override
-    public User findByUsernameOrEmail(String usernameOrEmail) {
+    public String delete(int id, String authorization) {
         return null;
     }
 }

@@ -2,11 +2,11 @@ package com.java.boilerplate.model;
 
 import lombok.Data;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class RequestFilters {
     private String field;
     private String condition;
-    private ArrayList<String> value;
+    private List<String> value;
 }

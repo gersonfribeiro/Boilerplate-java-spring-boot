@@ -2,11 +2,11 @@ package com.java.boilerplate.model;
 
 import lombok.Data;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class RequestPagination {
     private int limit;
     private int offset;
-    private ArrayList<RequestFilters> filters;
+    private List<RequestFilters> filters;
 }

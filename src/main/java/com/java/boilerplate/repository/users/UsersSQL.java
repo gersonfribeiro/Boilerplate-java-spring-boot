@@ -1,7 +1,7 @@
 package com.java.boilerplate.repository.users;
 
-import com.java.boilerplate.repository.IBaseSQL;
-
-public class UsersSQL extends IBaseSQL {
-
+public class UsersSQL {
+    static StringBuilder SQLBaseQuery() {
+        return new StringBuilder();
+    }
 }
